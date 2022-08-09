@@ -1,6 +1,8 @@
 #include <iostream>
 //#include "../RF24/nRF24L01.h"
-#include "../RF24/RF24.h"
+// #include "../RF24/RF24.h"
+#include <RF24/RF24.h>
+
 
 using namespace std;
 
