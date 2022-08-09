@@ -7,5 +7,5 @@ Upon successful loading of the SPI driver, you will see the device `/dev/spidev0
 $ g++ -Wall scanner.cpp -o scanner -lrf24 
 ```
 #### Wiring diagram nRF24L01+ to Raspberry Pi :
-![scheme](https://github.com/wirekraken/Raspberry-Pi-NRF24/blob/master/scheme/scheme.png)
+![scheme](https://github.com/bczwartk/Raspberry-Pi-NRF24-bc/blob/master/scheme/scheme.png)
 
