@@ -1,11 +1,11 @@
-## Подключение и тестирование модуля nRF24L01+
-##### Для работы с модулем, предварительно нужно включить SPI
-Чтобы включить SPI, используйте `raspi-config` или раскомментируйте в файле `/boot/config.txt`  строку `dtparam=spi=on`. После перезагрузитесь.
-При успешной загрузке драйвера SPI вы увидите устройство `/dev/spidev0.0`.
-#### Компиляция и сборка :
+## Connecting and testing the module nRF24L01+
+##### To work with the module, you must first enable SPI
+To enable SPI, use `raspi-config` or uncomment the line `dtparam=spi=on` in `/boot/config.txt`. Reboot afterwards.
+Upon successful loading of the SPI driver, you will see the device `/dev/spidev0.0`.
+#### Compiling and building :
 ```sh
-$ g++ -Wall -lrf24 scanner.cpp -o scanner
+$ g++ -Wall scanner.cpp -o scanner -lrf24 
 ```
-#### Схема подключения nRF24L01+ к Raspberry Pi :
+#### Wiring diagram nRF24L01+ to Raspberry Pi :
 ![scheme](https://github.com/wirekraken/Raspberry-Pi-NRF24/blob/master/scheme/scheme.png)
 
