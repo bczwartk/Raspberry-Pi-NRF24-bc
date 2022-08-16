@@ -22,7 +22,8 @@ int main() {
   radio.setDataRate(RF24_1MBPS);
   radio.enableDynamicPayloads();
 
-  radio.openReadingPipe(0, 0x7878787878LL);
+  // radio.openReadingPipe(0, 0x7878787878LL);
+  radio.openReadingPipe(0, 0x2109BC7119LL);
 
   radio.printDetails();
 
